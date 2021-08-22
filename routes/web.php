@@ -14,6 +14,7 @@ use App\Http\Controllers\UserController;
 |
 */
 
+Route::get('/',redirect('user'));
 
 Route::get('user', [UserController::class, 'index'])->name('user.index');
 Route::get('user/create', [UserController::class, 'create'])->name('user.create');
