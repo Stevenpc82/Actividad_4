@@ -1,6 +1,21 @@
 @extends('layout.template')
 @section('title','index')
 @section('content')
+    @if(session('status'))
+        <div class="alert alert-success col text-center">
+            {{session('status')}}
+        </div>
+    @endif
+    @if(session('create'))
+        <div class="alert alert-success col text-center">
+            {{session('create')}}
+        </div>
+    @endif
+    @if(session('destroy'))
+        <div class="alert alert-danger col text-center">
+            {{session('destroy')}}
+        </div>
+    @endif
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12">
@@ -30,9 +45,11 @@
                                     <form action="{{route('user.destroy',$user->id)}}" method="post">
                                         @csrf
                                         @method('DELETE')
-                                    <a href="{{route('user.show',$user->id)}}" class="btn btn-sm btn-info">Detalles</a>
-                                    <a href="" class="btn btn-sm btn-warning">Editar</a>
-                                    <button class="btn btn-sm btn-danger" type="sumbit">Eliminar</button>
+                                        <a href="{{route('user.show',$user->id)}}"
+                                           class="btn btn-sm btn-outline-info">Detalles</a>
+                                        <a href="{{route('user.edit',$user->id)}}"
+                                           class="btn btn-sm btn-outline-warning ">Editar</a>
+                                        <button class="btn btn-sm btn-outline-danger submit-prevent-button" type="sumbit">Eliminar</button>
                                     </form>
                                 </td>
                             </tr>

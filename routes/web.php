@@ -22,6 +22,8 @@ Route::get('user/create', [UserController::class, 'create'])->name('user.create'
 Route::get('user/{id}',[UserController::class,'show'])->name('user.show');
 Route::post('user',[UserController::class, 'store'])->name('user.store');
 Route::delete('user/{id}',[UserController::class,'destroy'])->name('user.destroy');
+Route::get('user/edit/{id}', [UserController::class,'edit'])->name('user.edit');
+Route::put('user/{id}', [UserController::class,'update'])->name('user.update');
 
 
 

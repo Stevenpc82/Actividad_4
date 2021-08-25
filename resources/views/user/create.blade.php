@@ -4,7 +4,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-3">
-                <form action="{{route('user.store')}}" method="post">
+                <form action="{{route('user.store')}}" method="post" >
                     @csrf
 
                     <div class="form-group">
