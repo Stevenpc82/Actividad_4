@@ -27,8 +27,7 @@
                             <th>Nombres</th>
                             <th>Apellidos</th>
                             <th>Correo</th>
-                            <th>Fecha Creación</th>
-                            <th>Fecha Modificación</th>
+                            <th>Contacto</th>
                             <th>Acciones</th>
                         </tr>
                         </thead>
@@ -39,8 +38,7 @@
                                 <td>{{$user->name}}</td>
                                 <td>{{$user->lastname}}</td>
                                 <td>{{$user->email}}</td>
-                                <td>{{$user->created_at}}</td>
-                                <td>{{$user->updated_at}}</td>
+                                <td>{{$user->phone}}</td>
                                 <td>
                                     <form action="{{route('user.destroy',$user->id)}}" method="post">
                                         @csrf

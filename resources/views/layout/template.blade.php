@@ -14,11 +14,8 @@
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-        <h2 class="text col text-center text-primary">Proyecto ADSI</h2>
-        <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
+        <h2 class="text col text-center text-secondary">Proyecto ADSI</h2>
+
     </div>
 </nav>
 

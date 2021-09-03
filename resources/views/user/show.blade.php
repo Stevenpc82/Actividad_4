@@ -34,6 +34,10 @@
                 <td>{{$user->email}}</td>
             </tr>
             <tr>
+                <td><h4>Contacto:</h4></td>
+                <td>{{$user->phone}}</td>
+            </tr>
+            <tr>
                 <td><h4>Tu id</h4></td>
                 <td>{{$user->id}}</td>
             </tr>

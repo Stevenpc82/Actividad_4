@@ -11,5 +11,5 @@ class User extends Model
 
     protected $table = 'user';
     protected $primaryKey = 'id';
-    protected $fillable = ['name','lastname','email'];
+    protected $fillable = ['name','lastname','email', 'phone'];
 }

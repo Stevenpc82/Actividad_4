@@ -31,7 +31,8 @@ class UserController extends Controller
         $user = User::create([
             'name' => $request->input('name'),
             'lastname' => $request->input('lastname'),
-            'email' => $request->input('email')
+            'email' => $request->input('email'),
+            'phone'=> $request->input('phone')
         ]);
         return redirect('user')->with('create', 'Se ha creado un nuevo usuario');
     }
@@ -54,6 +55,7 @@ class UserController extends Controller
             'name'=>$request->input('name'),
             'lastname'=>$request->input('lastname'),
             'email'=>$request->input('email'),
+            'phone'=> $request->input('phone')
         ]);
 
 

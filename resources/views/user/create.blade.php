@@ -19,6 +19,10 @@
                         <label for="">Correo</label>
                         <input type="text" class="form-control" name="email">
                     </div>
+                    <div class="form-group">
+                        <label for="">Contacto</label>
+                        <input type="text" class="form-control" name="phone">
+                    </div>
                     <br>
                     <div class="form-group, p-2">
                         <button class="btn btn-primary">Crear nuevo usuario</button>
@@ -26,7 +30,7 @@
                 </form>
             </div>
             <div class="col-md-9">
-                <h2 class="text-center">Bienvedido a nuestra pagina de prueba</h2>
+                <h2 class="text-center">Bienvedido</h2>
                 <br><br>
                 <p class="text-center">En estos momentos usted esta siendo parte de un nuevo proyecto para fortalecer los conocimientos en
                     programacion, cualquier comentario y/o consejo sera bien recibido</p

@@ -44,6 +44,10 @@
                 <label for="">Correo</label>
                 <input type="text" class="form-control" name="email" value="{{$user->email}}">
             </div>
+            <div class="form-group">
+                <label for="">Contacto</label>
+                <input type="text" class="form-control" name="phone" value="{{$user->phone}}">
+            </div>
             <br>
             <div class="container-fluid">
                 <div class="row">
