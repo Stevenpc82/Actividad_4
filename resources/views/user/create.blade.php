@@ -6,7 +6,6 @@
             <div class="col-md-3">
                 <form action="{{route('user.store')}}" method="post" >
                     @csrf
-
                     <div class="form-group">
                         <label for="">Nombre</label>
                         <input type="text" class="form-control" name="name">
